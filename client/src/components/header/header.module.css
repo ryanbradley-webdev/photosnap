@@ -8,3 +8,11 @@
     height: 72px;
     padding-inline: 24px;
 }
+
+.header::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--clr-white);
+    z-index: -1;
+}

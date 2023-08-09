@@ -4,6 +4,7 @@
   --clr-black: #000;
   --clr-grey: #DFDFDF;
   --clr-white: #FFF;
+  --clr-border: #00000040;
   --gradient-main: linear-gradient(45deg, #FFC593, #BC7198, #5A77FF);
   --font-h1: bold 40px/48px 'DM Sans', Arial, sans-serif;
   --font-h2: bold 24px/25px 'DM Sans', Arial, sans-serif;

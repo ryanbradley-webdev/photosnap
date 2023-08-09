@@ -1,12 +1,33 @@
 .nav {
     position: absolute;
-    top: -100%;
+    top: -200px;
+    left: 0;
     width: 100%;
-    opacity: 0;
-    transition: 0.2s ease;
+    height: fit-content;
+    padding-block: 32px;
+    padding-inline: 33px;
+    background-color: var(--clr-white);
+    transition: 0.3s ease-in-out;
+    z-index: -2;
 }
 
 .nav[aria-hidden='false'] {
     top: 72px;
-    opacity: 1;
+}
+
+.links {
+    display: grid;
+    justify-items: center;
+    row-gap: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--clr-border);
+}
+
+.links a {
+    color: var(--clr-black);
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
 }

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import styles from './navMenu.module.css'
+import Button from '../button/Button'
 
 export default function NavMenu({
     menuVisible
@@ -12,7 +13,9 @@ export default function NavMenu({
             aria-hidden={!menuVisible}
         >
 
-            <div>
+            <div
+                className={styles.links}
+            >
 
                 <Link to='/stories'>STORIES</Link>
                 <Link to='/features'>FEATURES</Link>
@@ -20,7 +23,11 @@ export default function NavMenu({
 
             </div>
 
-
+            <Button
+                variant='black'
+            >
+                GET AN INVITE
+            </Button>
 
         </nav>
     )
