@@ -28,7 +28,7 @@
 }
 
 .black_btn,
-.black_arrow_btn {
+.white_arrow_btn {
     color: var(--clr-white);
 }
 
@@ -37,12 +37,16 @@
 }
 
 .white_btn,
-.white_arrow_btn {
-    color: var(--clr-white);
+.black_arrow_btn {
+    color: var(--clr-black);
 }
 
 .white_btn {
     background-color: var(--clr-black);
+}
+
+.black_arrow_btn > svg {
+    stroke: var(--clr-black);
 }
 
 .white_arrow_btn > svg {
