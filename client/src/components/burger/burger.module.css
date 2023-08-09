@@ -1,0 +1,14 @@
+.burger {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+}
+
+.burger > svg {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s ease;
+}
