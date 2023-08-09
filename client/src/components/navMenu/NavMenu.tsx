@@ -3,9 +3,11 @@ import styles from './navMenu.module.css'
 import Button from '../button/Button'
 
 export default function NavMenu({
-    menuVisible
+    menuVisible,
+    toggleMenu
 }: {
     menuVisible: boolean
+    toggleMenu: () => void
 }) {
     return (
         <nav
@@ -17,9 +19,26 @@ export default function NavMenu({
                 className={styles.links}
             >
 
-                <Link to='/stories'>STORIES</Link>
-                <Link to='/features'>FEATURES</Link>
-                <Link to='/pricing'>PRICING</Link>
+                <Link
+                    to='/stories'
+                    onClick={toggleMenu}
+                >
+                    STORIES
+                </Link>
+
+                <Link
+                    to='/features'
+                    onClick={toggleMenu}
+                >
+                    FEATURES
+                </Link>
+
+                <Link
+                    to='/pricing'
+                    onClick={toggleMenu}
+                >
+                    PRICING
+                </Link>
 
             </div>
 

@@ -23,6 +23,7 @@ export default function Header() {
 
             <NavMenu
                 menuVisible={menuVisible}
+                toggleMenu={toggleMenu}
             />
 
         </header>
