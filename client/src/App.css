@@ -11,3 +11,8 @@ a {
 button {
   cursor: pointer;
 }
+
+h1 {
+  font: var(--font-h1);
+  letter-spacing: var(--space-h1);
+}

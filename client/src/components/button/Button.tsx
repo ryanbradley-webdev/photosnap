@@ -1,8 +1,9 @@
 import { ReactNode } from "react"
 import styles from './button.module.css'
+import Arrow from "../../assets/Arrow"
 
 interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
-    variant: 'white' | 'black' | undefined
+    variant: 'white' | 'black' | 'arrow-black' | 'arrow-white' | undefined
     children: ReactNode
 }
 
@@ -13,6 +14,16 @@ export default function Button({
 }: ButtonProps) {
     const generateClassName = () => {
         switch(variant) {
+            case 'arrow-black':
+                return styles.black_arrow_btn
+
+            case 'arrow-white':
+                return styles.white_arrow_btn
+
+            case 'white':
+                return styles.white_btn
+
+            case 'black':
             default:
                 return styles.black_btn
         }
@@ -25,6 +36,8 @@ export default function Button({
         >
 
             {children}
+
+            {variant?.includes('arrow') && <Arrow />}
 
         </button>
     )

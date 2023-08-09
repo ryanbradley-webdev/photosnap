@@ -1,0 +1,35 @@
+.hero {
+    background-color: var(--clr-black);
+}
+
+.hero > img {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.hero div {
+    position: relative;
+    padding-block: 72px;
+    padding-inline: 33px;
+    color: var(--clr-text-white);
+}
+
+.hero div::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 33px;
+    width: 128px;
+    height: 6px;
+    background: var(--gradient-main);
+}
+
+.hero div > h1 {
+    color: var(--clr-white);
+    margin-bottom: 16px;
+}
+
+.hero div > button {
+    margin-top: 23px;
+}

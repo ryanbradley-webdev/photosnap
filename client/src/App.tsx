@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom'
 import Header from './components/header/Header'
-import './App.css'
 import Home from './routes/home/Home'
 import Stories from './routes/stories/Stories'
 import Features from './routes/features/Features'
 import Pricing from './routes/pricing/Pricing'
+import './App.css'
 
 function App() {
   return (

@@ -4,15 +4,29 @@
   --clr-black: #000;
   --clr-grey: #DFDFDF;
   --clr-white: #FFF;
+  --clr-text-white: #ffffff99;
+  --clr-text-black: #00000099;
   --clr-border: #00000040;
-  --gradient-main: linear-gradient(45deg, #FFC593, #BC7198, #5A77FF);
-  --font-h1: bold 40px/48px 'DM Sans', Arial, sans-serif;
+  --gradient-main: linear-gradient(1deg, #FFC593, #BC7198, #5A77FF);
+  --font-h1: bold 32px/40px 'DM Sans', Arial, sans-serif;
   --font-h2: bold 24px/25px 'DM Sans', Arial, sans-serif;
   --font-h3: bold 18px/25px 'DM Sans', Arial, sans-serif;
   --font-h4: bold 12px/16px 'DM Sans', Arial, sans-serif;
-  --font-body: 15px/25px 'DM Sans', Arial, sans-serif;
-  --space-h1: 4.17ch;
-  --space-h4: 2ch; 
+  --font-body: 300 15px/25px 'DM Sans', Arial, sans-serif;
+  --space-h1: 3.33px;
+  --space-h4: 2px; 
+}
+
+@media screen and (min-width: 480px) {
+  :root {
+    --font-h1: bold 40px/48px 'DM Sans', Arial, sans-serif;
+    --font-h2: bold 24px/25px 'DM Sans', Arial, sans-serif;
+    --font-h3: bold 18px/25px 'DM Sans', Arial, sans-serif;
+    --font-h4: bold 12px/16px 'DM Sans', Arial, sans-serif;
+    --font-body: 15px/25px 'DM Sans', Arial, sans-serif;
+    --space-h1: 4.17px;
+    --space-h4: 2px;
+  }
 }
 
 *,
