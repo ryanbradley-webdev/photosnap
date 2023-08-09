@@ -1,5 +1,5 @@
 .burger {
-    position: absolute;
+    position: relative;
     border: none;
     background-color: transparent;
     width: 24px;
