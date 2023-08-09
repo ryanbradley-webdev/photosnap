@@ -1,0 +1,12 @@
+.nav {
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.2s ease;
+}
+
+.nav[aria-hidden='false'] {
+    top: 72px;
+    opacity: 1;
+}

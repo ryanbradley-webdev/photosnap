@@ -1,14 +1,19 @@
-import './App.css'
+import { Routes, Route } from 'react-router-dom'
 import Header from './components/header/Header'
+import './App.css'
 
 function App() {
   return (
     <>
       <Header />
 
-      <main>
+      <Routes>
+
+        <Route path='/' element={<main>
         Main
-      </main>
+      </main>} />
+        
+      </Routes>
       
       <footer>
         Footer
