@@ -102,7 +102,7 @@ export default function Home() {
                 className={styles.featured_stories}
             >
 
-                {SAMPLE_STORIES.map(card => (
+                {SAMPLE_STORIES.slice(0, 4).map(card => (
                     <Card
                         key={crypto.randomUUID()}
                         {...card}
