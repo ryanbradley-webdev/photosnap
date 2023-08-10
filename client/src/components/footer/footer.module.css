@@ -1,0 +1,53 @@
+.footer {
+    display: grid;
+    justify-items: center;
+    padding-block: 56px;
+    color: var(--clr-white);
+    background-color: var(--clr-black);
+}
+
+.footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brand {
+    gap: 32px;
+}
+
+.brand > svg path:first-child {
+    fill: var(--clr-white);
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 154px;
+}
+
+.socials > svg path {
+    fill: var(--clr-white);
+}
+
+.links {
+    gap: 19px;
+    margin-top: 49px;
+    margin-bottom: 119px;
+}
+
+.links a {
+    color: var(--clr-white);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.footer > div:last-child {
+    gap: 34px;
+}
+
+.footer > div p {
+    opacity: 0.5;
+}

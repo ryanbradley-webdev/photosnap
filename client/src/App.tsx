@@ -4,6 +4,7 @@ import Home from './routes/home/Home'
 import Stories from './routes/stories/Stories'
 import Features from './routes/features/Features'
 import Pricing from './routes/pricing/Pricing'
+import Footer from './components/footer/Footer'
 import './App.css'
 
 function App() {
@@ -27,9 +28,7 @@ function App() {
 
       </main>
       
-      <footer>
-        Footer
-      </footer>
+      <Footer />
 
     </>
   )
