@@ -1,0 +1,32 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    padding-inline: 33px;
+    padding-bottom: 40px;
+    color: var(--clr-white);
+    isolation: isolate;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent, #000000a9);
+    z-index: -1;
+}
+
+.card hr {
+    margin-top: 16px;
+    margin-bottom: 20px;
+    border: 1px solid var(--clr-white);
+    opacity: 0.25;
+}
+
+.card button {
+    width: 100%;
+    justify-content: space-between;
+}

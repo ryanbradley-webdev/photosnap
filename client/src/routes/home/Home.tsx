@@ -3,6 +3,12 @@ import BeautifulStoriesMobile from '../../assets/mobile-images/beautiful-stories
 import EveryoneMobile from '../../assets/mobile-images/designed-for-everyone.jpg'
 import Button from '../../components/button/Button'
 import styles from './home.module.css'
+import Card from '../../components/card/Card'
+
+import Mountains from '../../assets/sample-stories/mountains.png'
+import Cityscapes from '../../assets/sample-stories/cityscapes.png'
+import Voyage from '../../assets/sample-stories/18-days-voyage.png'
+import Architecturals from '../../assets/sample-stories/architecturals.png'
 
 export default function Home() {
     return (
@@ -92,6 +98,46 @@ export default function Home() {
 
             </section>
 
+            <section
+                className={styles.featured_stories}
+            >
+
+                {SAMPLECARDS.map(card => (
+                    <Card
+                        key={crypto.randomUUID()}
+                        {...card}
+                    />
+                ))}
+
+            </section>
+
         </>
     )
 }
+
+const SAMPLECARDS = [
+    {
+        title: 'The Mountains',
+        author: 'John Appleseed',
+        link: '/',
+        image: Mountains
+    },
+    {
+        title: 'Sunset Cityscapes',
+        author: 'Benjamin Cruz',
+        link: '/',
+        image: Cityscapes
+    },
+    {
+        title: '18 Days Voyage',
+        author: 'Alexei Borodin',
+        link: '/',
+        image: Voyage
+    },
+    {
+        title: 'Architecturals',
+        author: 'Samantha Brooke',
+        link: '/',
+        image: Architecturals
+    },
+]
