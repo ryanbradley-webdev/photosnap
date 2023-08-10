@@ -4,14 +4,11 @@ import EveryoneMobile from '../../assets/mobile-images/designed-for-everyone.jpg
 import Button from '../../components/button/Button'
 import styles from './home.module.css'
 import Card from '../../components/card/Card'
-
-import Mountains from '../../assets/sample-stories/mountains.png'
-import Cityscapes from '../../assets/sample-stories/cityscapes.png'
-import Voyage from '../../assets/sample-stories/18-days-voyage.png'
-import Architecturals from '../../assets/sample-stories/architecturals.png'
 import ResponsiveIcon from '../../assets/ResponsiveIcon'
 import NoLimitIcon from '../../assets/NoLimitIcon'
 import EmbedIcon from '../../assets/EmbedIcon'
+
+import { SAMPLE_STORIES } from '../../samepleData/sampleStories'
 
 export default function Home() {
     return (
@@ -105,7 +102,7 @@ export default function Home() {
                 className={styles.featured_stories}
             >
 
-                {SAMPLECARDS.map(card => (
+                {SAMPLE_STORIES.map(card => (
                     <Card
                         key={crypto.randomUUID()}
                         {...card}
@@ -165,34 +162,3 @@ export default function Home() {
         </>
     )
 }
-
-const SAMPLECARDS = [
-    {
-        title: 'The Mountains',
-        author: 'John Appleseed',
-        link: '/',
-        date: '4-16-2020',
-        image: Mountains
-    },
-    {
-        title: 'Sunset Cityscapes',
-        author: 'Benjamin Cruz',
-        link: '/',
-        date: '4-14-2020',
-        image: Cityscapes
-    },
-    {
-        title: '18 Days Voyage',
-        author: 'Alexei Borodin',
-        link: '/',
-        date: '4-11-2020',
-        image: Voyage
-    },
-    {
-        title: 'Architecturals',
-        author: 'Samantha Brooke',
-        link: '/',
-        date: '4-9-2020',
-        image: Architecturals
-    },
-]

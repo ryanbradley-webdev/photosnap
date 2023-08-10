@@ -16,3 +16,8 @@ h1 {
   font: var(--font-h1);
   letter-spacing: var(--space-h1);
 }
+
+h4 {
+  font: var(--font-h4);
+  letter-spacing: var(--space-h4);
+}
