@@ -171,24 +171,28 @@ const SAMPLECARDS = [
         title: 'The Mountains',
         author: 'John Appleseed',
         link: '/',
+        date: '4-16-2020',
         image: Mountains
     },
     {
         title: 'Sunset Cityscapes',
         author: 'Benjamin Cruz',
         link: '/',
+        date: '4-14-2020',
         image: Cityscapes
     },
     {
         title: '18 Days Voyage',
         author: 'Alexei Borodin',
         link: '/',
+        date: '4-11-2020',
         image: Voyage
     },
     {
         title: 'Architecturals',
         author: 'Samantha Brooke',
         link: '/',
+        date: '4-9-2020',
         image: Architecturals
     },
 ]

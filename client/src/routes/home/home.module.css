@@ -48,6 +48,10 @@
     margin-top: 23px;
 }
 
+.featured_stories p:first-child {
+    display: none;
+}
+
 .features {
     display: grid;
     row-gap: 56px;
