@@ -9,14 +9,13 @@ import NoLimitIcon from '../../assets/NoLimitIcon'
 import EmbedIcon from '../../assets/EmbedIcon'
 
 import { SAMPLE_STORIES } from '../../samepleData/sampleStories'
+import Hero from '../../components/hero/Hero'
 
 export default function Home() {
     return (
         <>
             
-            <section
-                className={styles.hero}
-            >
+            <Hero>
 
                 <img
                     srcSet={`${HeroMobile}`}
@@ -40,7 +39,7 @@ export default function Home() {
 
                 </div>
 
-            </section>
+            </Hero>
 
             <section
                 className={styles.stories}
