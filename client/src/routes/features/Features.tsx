@@ -1,5 +1,6 @@
-import Hero from "../../components/hero/Hero";
+import Hero from "../../components/hero/Hero"
 import FeaturesHero from '../../assets/mobile-images/features.jpg'
+import FeaturesList from "../../components/featuresList/FeaturesList"
 
 export default function Features() {
     return (
@@ -25,6 +26,8 @@ export default function Features() {
                 </div>
 
             </Hero>
+
+            <FeaturesList />
             
         </>
     )

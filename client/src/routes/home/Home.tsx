@@ -4,12 +4,10 @@ import EveryoneMobile from '../../assets/mobile-images/designed-for-everyone.jpg
 import Button from '../../components/button/Button'
 import styles from './home.module.css'
 import Card from '../../components/card/Card'
-import ResponsiveIcon from '../../assets/ResponsiveIcon'
-import NoLimitIcon from '../../assets/NoLimitIcon'
-import EmbedIcon from '../../assets/EmbedIcon'
+import Hero from '../../components/hero/Hero'
+import FeaturesList from '../../components/featuresList/FeaturesList'
 
 import { SAMPLE_STORIES } from '../../samepleData/sampleStories'
-import Hero from '../../components/hero/Hero'
 
 export default function Home() {
     return (
@@ -110,53 +108,9 @@ export default function Home() {
 
             </section>
 
-            <section
-                className={styles.features}
-            >
-
-                <div>
-
-                    <ResponsiveIcon />
-
-                    <h3>
-                        100% Responsive
-                    </h3>
-
-                    <p>
-                        No matter which device you're on, our site is fully responsive and stories look beautiful on any screen.
-                    </p>
-
-                </div>
-
-                <div>
-
-                    <NoLimitIcon />
-
-                    <h3>
-                        No Photo Upload Limit
-                    </h3>
-
-                    <p>
-                        Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.
-                    </p>
-
-                </div>
-
-                <div>
-
-                    <EmbedIcon />
-
-                    <h3>
-                        Available to Embed
-                    </h3>
-
-                    <p>
-                        Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more.
-                    </p>
-
-                </div>
-
-            </section>
+            <FeaturesList
+                limit
+            />
 
         </>
     )
