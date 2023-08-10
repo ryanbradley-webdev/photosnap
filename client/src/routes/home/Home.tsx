@@ -9,6 +9,9 @@ import Mountains from '../../assets/sample-stories/mountains.png'
 import Cityscapes from '../../assets/sample-stories/cityscapes.png'
 import Voyage from '../../assets/sample-stories/18-days-voyage.png'
 import Architecturals from '../../assets/sample-stories/architecturals.png'
+import ResponsiveIcon from '../../assets/ResponsiveIcon'
+import NoLimitIcon from '../../assets/NoLimitIcon'
+import EmbedIcon from '../../assets/EmbedIcon'
 
 export default function Home() {
     return (
@@ -108,6 +111,54 @@ export default function Home() {
                         {...card}
                     />
                 ))}
+
+            </section>
+
+            <section
+                className={styles.features}
+            >
+
+                <div>
+
+                    <ResponsiveIcon />
+
+                    <h3>
+                        100% Responsive
+                    </h3>
+
+                    <p>
+                        No matter which device you're on, our site is fully responsive and stories look beautiful on any screen.
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <NoLimitIcon />
+
+                    <h3>
+                        No Photo Upload Limit
+                    </h3>
+
+                    <p>
+                        Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <EmbedIcon />
+
+                    <h3>
+                        Available to Embed
+                    </h3>
+
+                    <p>
+                        Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more.
+                    </p>
+
+                </div>
 
             </section>
 
