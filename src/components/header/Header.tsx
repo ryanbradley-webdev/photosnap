@@ -3,6 +3,7 @@ import LogoMain from '../../assets/LogoMain'
 import Burger from '../burger/Burger'
 import styles from './header.module.css'
 import NavMenu from '../navMenu/NavMenu'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
     const [menuVisible, setMenuVisible] = useState(false)
@@ -14,7 +15,13 @@ export default function Header() {
     return (
         <header className={styles.header}>
 
-            <LogoMain />
+            <Link
+                to='/'
+            >
+
+                <LogoMain />
+
+            </Link>
 
             <Burger
                 menuVisible={menuVisible}

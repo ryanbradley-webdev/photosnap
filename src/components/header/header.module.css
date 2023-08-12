@@ -11,6 +11,10 @@
     z-index: 10;
 }
 
+.header > a {
+    display: flex;
+}
+
 .header::after {
     content: '';
     position: absolute;
