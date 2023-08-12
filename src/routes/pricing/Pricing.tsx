@@ -3,8 +3,11 @@ import PricingHero from '../../assets/mobile-images/pricing.jpg'
 import InviteLink from "../../components/inviteLink/InviteLink"
 import styles from './pricing.module.css'
 import PricingCard from "../../components/pricingCard/PricingCard"
+import { useState } from "react"
 
 export default function Pricing() {
+    const [yearly, setYearly] = useState(false)
+    
     return (
         <>
         
@@ -33,9 +36,32 @@ export default function Pricing() {
                 className={styles.pricing}
             >
 
-                <div>
+                <div
+                    className={styles.price_toggle}
+                >
 
-                    Monthly or Yearly
+                    <h3
+                        style={{
+                            opacity: yearly ? '0.5' : ''
+                        }}
+                    >
+                        Monthly
+                    </h3>
+
+                    <button
+                        className={styles.input}
+                        data-yearly={yearly}
+                        onClick={() => setYearly(!yearly)}
+                    >
+                    </button>
+
+                    <h3
+                        style={{
+                            opacity: yearly ? '' : '0.5'
+                        }}
+                    >
+                        Yearly
+                    </h3>
 
                 </div>
 

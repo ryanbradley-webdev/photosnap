@@ -6,6 +6,43 @@
     padding-block: 64px;
 }
 
+.price_toggle {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.price_toggle h3,
+.input::after {
+    transition: all 0.2s ease-in-out;
+}
+
+.input {
+    position: relative;
+    display: flex;
+    height: 32px;
+    width: 64px;
+    background-color: var(--clr-grey);
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+.input::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    height: 24px;
+    width: 24px;
+    background-color: var(--clr-black);
+    border-radius: 100%;
+}
+
+.input[data-yearly='true']::after {
+    left: 36px;
+}
+
 .pricing_grid {
     display: grid;
     row-gap: 24px;
