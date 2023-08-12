@@ -1,0 +1,30 @@
+.invite {
+    position: relative;
+    display: block;
+    gap: 24px;
+    height: 288px;
+    width: 100%;
+    padding-inline: 33px;
+    padding-top: 64px;
+    color: var(--clr-white);
+    background-image: url('../../assets/mobile-images/invite.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.invite h2 {
+    font: var(--font-h1);
+    letter-spacing: var(--space-h1);
+    margin-bottom: 24px;
+}
+
+.invite::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 33px;
+    width: 128px;
+    height: 6px;
+    background: var(--gradient-main);
+}

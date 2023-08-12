@@ -1,6 +1,7 @@
 import Hero from "../../components/hero/Hero"
 import FeaturesHero from '../../assets/mobile-images/features.jpg'
 import FeaturesList from "../../components/featuresList/FeaturesList"
+import InviteLink from "../../components/inviteLink/InviteLink"
 
 export default function Features() {
     return (
@@ -28,6 +29,8 @@ export default function Features() {
             </Hero>
 
             <FeaturesList />
+
+            <InviteLink />
             
         </>
     )

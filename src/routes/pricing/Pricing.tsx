@@ -1,5 +1,6 @@
 import Hero from "../../components/hero/Hero"
 import PricingHero from '../../assets/mobile-images/pricing.jpg'
+import InviteLink from "../../components/inviteLink/InviteLink"
 
 export default function Pricing() {
     return (
@@ -25,6 +26,8 @@ export default function Pricing() {
                 </div>
 
             </Hero>
+
+            <InviteLink />
         
         </>
     )
