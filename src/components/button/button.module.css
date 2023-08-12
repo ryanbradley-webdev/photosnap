@@ -42,7 +42,7 @@
 }
 
 .white_btn {
-    background-color: var(--clr-black);
+    background-color: var(--clr-white);
 }
 
 .black_arrow_btn > svg {

@@ -1,6 +1,8 @@
 import Hero from "../../components/hero/Hero"
 import PricingHero from '../../assets/mobile-images/pricing.jpg'
 import InviteLink from "../../components/inviteLink/InviteLink"
+import styles from './pricing.module.css'
+import PricingCard from "../../components/pricingCard/PricingCard"
 
 export default function Pricing() {
     return (
@@ -26,6 +28,66 @@ export default function Pricing() {
                 </div>
 
             </Hero>
+
+            <section
+                className={styles.pricing}
+            >
+
+                <div>
+
+                    Monthly or Yearly
+
+                </div>
+
+                <div
+                    className={styles.pricing_grid}
+                >
+
+                    <PricingCard
+                        title='Basic'
+                        monthlyPrice="19.00"
+                    >
+
+                        <p>
+                            Includes basic usage of our platform. Recommended for new and aspiring photographers.
+                        </p>
+
+                    </PricingCard>
+
+                    <PricingCard
+                        title='Pro'
+                        monthlyPrice="39.00"
+                        second
+                    >
+
+                        <p>
+                            More advanced features available. Recommended for photography veterans and professionals.
+                        </p>
+
+                    </PricingCard>
+
+                    <PricingCard
+                        title='Business'
+                        monthlyPrice="99.00"
+                    >
+
+                        <p>
+                            Additional features available such as more detailed metrics. Recommended for business owners.
+                        </p>
+
+                    </PricingCard>
+
+                </div>
+
+            </section>
+
+            <section
+                className={styles.compare}
+            >
+
+
+
+            </section>
 
             <InviteLink />
         

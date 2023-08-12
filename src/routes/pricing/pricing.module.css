@@ -1,0 +1,12 @@
+.pricing {
+    display: grid;
+    justify-items: center;
+    row-gap: 40px;
+    padding-inline: 29px;
+    padding-block: 64px;
+}
+
+.pricing_grid {
+    display: grid;
+    row-gap: 24px;
+}

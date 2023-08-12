@@ -1,0 +1,46 @@
+.card {
+    display: grid;
+    row-gap: 40px;
+    width: 100%;
+    height: 407px;
+    text-align: center;
+    padding-inline: 21px;
+    padding-block: 48px;
+}
+
+.card:nth-of-type(odd) {
+    background-color: #F5F5F5;
+}
+
+.card:nth-of-type(even) {
+    position: relative;
+    background-color: var(--clr-black);
+}
+
+.card:nth-of-type(even)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: var(--gradient-main);
+}
+
+.card:nth-of-type(even) :where(h2, h3, p) {
+    color: var(--clr-white);
+}
+
+.card:nth-of-type(even) p {
+    opacity: 0.6;
+}
+
+.card h2 {
+    font: var(--font-h2);
+    margin-bottom: 18px;
+}
+
+.card h3 {
+    font: var(--font-price);
+    letter-spacing: var(--space-price);
+}
