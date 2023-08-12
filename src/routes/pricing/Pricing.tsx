@@ -71,7 +71,8 @@ export default function Pricing() {
 
                     <PricingCard
                         title='Basic'
-                        monthlyPrice="19.00"
+                        monthlyPrice={19}
+                        yearly={yearly}
                     >
 
                         <p>
@@ -82,7 +83,8 @@ export default function Pricing() {
 
                     <PricingCard
                         title='Pro'
-                        monthlyPrice="39.00"
+                        monthlyPrice={39}
+                        yearly={yearly}
                         second
                     >
 
@@ -94,7 +96,8 @@ export default function Pricing() {
 
                     <PricingCard
                         title='Business'
-                        monthlyPrice="99.00"
+                        monthlyPrice={99}
+                        yearly={yearly}
                     >
 
                         <p>

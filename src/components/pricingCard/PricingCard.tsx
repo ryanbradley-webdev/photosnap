@@ -5,11 +5,13 @@ import Button from '../button/Button'
 export default function PricingCard({
     title,
     monthlyPrice,
+    yearly,
     second,
     children
 }: {
     title: string
-    monthlyPrice: string
+    monthlyPrice: number
+    yearly: boolean
     second?: boolean
     children: ReactNode
 }) {
@@ -30,11 +32,11 @@ export default function PricingCard({
             <div>
 
                 <h3>
-                    ${monthlyPrice}
+                    ${monthlyPrice * (yearly ? 12 : 1)}.00
                 </h3>
 
                 <p>
-                    per month
+                    per {yearly ? 'year' : 'month'}
                 </p>
 
             </div>
