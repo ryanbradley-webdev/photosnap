@@ -13,7 +13,7 @@ export default function FeaturesList({
 }) {
     return (
         <section
-            className={styles.features}
+            className={`${styles.features} ${limit ? '' : styles.grid}`}
         >
 
             <div>

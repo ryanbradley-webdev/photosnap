@@ -71,4 +71,9 @@
         min-width: 230px;
         object-fit: cover;
     }
+
+    .home div,
+    .home > img {
+        height: 650px;
+    }
 }

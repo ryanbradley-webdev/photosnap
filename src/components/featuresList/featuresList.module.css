@@ -19,3 +19,23 @@
 .features p {
     color: var(--clr-text-black);
 }
+
+@media screen and (min-width: 558px) {
+    .features {
+        padding-block: 112px;
+        padding-inline: 38px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 11px;
+    }
+
+    .grid > div {
+        grid-template-rows: 104px 37.5px 1fr;
+    }
+
+    .grid svg {
+        align-self: center;
+    }
+}
