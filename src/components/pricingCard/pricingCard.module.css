@@ -44,3 +44,25 @@
     font: var(--font-price);
     letter-spacing: var(--space-price);
 }
+
+@media screen and (min-width: 641px) {
+    .card {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 32px;
+        column-gap: calc(100% - 540px);
+        text-align: left;
+        height: fit-content;
+        padding-inline: 40px;
+    }
+
+    .card:nth-of-type(even)::after {
+        height: 100%;
+        width: 6px;
+    }
+
+    .price {
+        grid-column: 2;
+        text-align: right;
+    }
+}

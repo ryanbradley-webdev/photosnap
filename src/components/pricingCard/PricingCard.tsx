@@ -29,7 +29,9 @@ export default function PricingCard({
 
             </div>
 
-            <div>
+            <div
+                className={styles.price}
+            >
 
                 <h3>
                     ${monthlyPrice * (yearly ? 12 : 1)}.00

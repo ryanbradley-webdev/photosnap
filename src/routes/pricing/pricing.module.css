@@ -6,6 +6,12 @@
     padding-block: 64px;
 }
 
+@media screen and (min-width: 641px) {
+    .pricing {
+        padding-inline: 39px;
+    }
+}
+
 .price_toggle {
     display: flex;
     align-items: center;
@@ -13,6 +19,7 @@
 }
 
 .price_toggle h3,
+.input,
 .input::after {
     transition: all 0.2s ease-in-out;
 }
@@ -28,6 +35,10 @@
     cursor: pointer;
 }
 
+.input[data-yearly='true'] {
+    background-color: var(--clr-black);
+}
+
 .input::after {
     content: '';
     position: absolute;
@@ -41,6 +52,7 @@
 
 .input[data-yearly='true']::after {
     left: 36px;
+    background-color: var(--clr-white);
 }
 
 .pricing_grid {
