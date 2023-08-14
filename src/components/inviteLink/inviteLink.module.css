@@ -13,6 +13,13 @@
     background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 480px) {
+    .invite {
+        height: 280px;
+        background-image: url('../../assets/tablet-images/invite.jpg');
+    }
+}
+
 .invite h2 {
     font: var(--font-h1);
     letter-spacing: var(--space-h1);
