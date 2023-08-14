@@ -50,6 +50,7 @@
 
 .comparison_grid {
     padding-inline: 29px;
+    margin-block: 16px 64px;
 }
 
 .comparison_grid > div {

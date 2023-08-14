@@ -1,9 +1,16 @@
+import CheckIcon from '../../assets/CheckIcon'
 import styles from './comparison.module.css'
 
 export default function Comparison({
-    title
+    title,
+    isBasic,
+    isPro,
+    isBusiness
 }: {
     title: string
+    isBasic?: boolean
+    isPro?: boolean
+    isBusiness?: boolean
 }) {
     return (
         <div
@@ -36,7 +43,17 @@ export default function Comparison({
                 className={styles.check_grid}
             >
 
+                <CheckIcon
+                    active={isBasic}
+                />
 
+                <CheckIcon
+                    active={isPro}
+                />
+
+                <CheckIcon
+                    active={isBusiness}
+                />
 
             </div>
 

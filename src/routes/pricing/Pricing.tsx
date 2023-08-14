@@ -145,34 +145,48 @@ export default function Pricing() {
 
                 <Comparison
                     title='UNLIMITED STORY POSTING'
+                    isBasic
+                    isPro
+                    isBusiness
                 />
 
                 <Comparison
                     title='UNLIMITED PHOTO UPLOAD'
+                    isBasic
+                    isPro
+                    isBusiness
                 />
 
                 <Comparison
                     title='EMBEDDING CUSTOM CONTENT'
+                    isPro
+                    isBusiness
                 />
 
                 <Comparison
                     title='CUSTOMIZE METADATA'
+                    isPro
+                    isBusiness
                 />
 
                 <Comparison
                     title='ADVANCED METRICS'
+                    isBusiness
                 />
 
                 <Comparison
                     title='PHOTO DOWNLOADS'
+                    isBusiness
                 />
 
                 <Comparison
                     title='SEARCH ENGINE INDEXING'
+                    isBusiness
                 />
 
                 <Comparison
                     title='CUSTOM ANALYTICS'
+                    isBusiness
                 />
 
             </section>
