@@ -1,6 +1,5 @@
 .footer {
     display: grid;
-    justify-items: center;
     padding-block: 56px;
     color: var(--clr-white);
     background-color: var(--clr-black);
@@ -8,7 +7,6 @@
 
 .footer > div {
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
@@ -16,12 +14,13 @@
     gap: 32px;
 }
 
-.brand > svg path:first-child {
+.footer > svg path:first-child {
     fill: var(--clr-white);
 }
 
 .socials {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 154px;
@@ -32,6 +31,7 @@
 }
 
 .links {
+    flex-direction: column;
     gap: 19px;
     margin-top: 49px;
     margin-bottom: 119px;
@@ -45,9 +45,49 @@
 }
 
 .footer > div:last-child {
+    flex-direction: column;
     gap: 34px;
 }
 
 .footer > div p {
     opacity: 0.5;
+}
+
+@media screen and (max-width: 640px) {
+    .footer {
+        justify-items: center;
+    }
+
+    .footer > svg {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .footer {
+        padding-inline: 39px;
+    }
+
+    .links {
+        justify-content: flex-start;
+        margin-top: 32px;
+        margin-bottom: 72px;
+    }
+
+    .socials {
+        grid-row: 3;
+    }
+
+    .links {
+        grid-column: 1;
+        flex-direction: row;
+    }
+    
+    .footer > div:last-child {
+        grid-column: 2;
+        grid-row: 1 / span 3;
+        align-items: flex-end;
+        justify-content: space-between;
+        height: 100%;
+    }
 }

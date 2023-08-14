@@ -14,27 +14,21 @@ export default function Footer() {
             className={styles.footer}
         >
 
+            <LogoMain />
+
             <div
-                className={styles.brand}
+                className={styles.socials}
             >
 
-                <LogoMain />
+                <Facebook />
 
-                <div
-                    className={styles.socials}
-                >
+                <YouTube />
 
-                    <Facebook />
+                <Twitter />
 
-                    <YouTube />
+                <Pinterest />
 
-                    <Twitter />
-
-                    <Pinterest />
-
-                    <Instagram />
-
-                </div>
+                <Instagram />
 
             </div>
 
