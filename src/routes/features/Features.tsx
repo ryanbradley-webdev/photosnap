@@ -1,5 +1,6 @@
 import Hero from "../../components/hero/Hero"
-import FeaturesHero from '../../assets/mobile-images/features.jpg'
+import FeaturesMobile from '../../assets/mobile-images/features.jpg'
+import FeaturesTablet from '../../assets/tablet-images/features.jpg'
 import FeaturesList from "../../components/featuresList/FeaturesList"
 import InviteLink from "../../components/inviteLink/InviteLink"
 
@@ -10,7 +11,12 @@ export default function Features() {
             <Hero>
 
                 <img
-                    src={FeaturesHero}
+                    src={FeaturesMobile}
+                    alt="Features"
+                />
+
+                <img
+                    src={FeaturesTablet}
                     alt="Features"
                 />
 
