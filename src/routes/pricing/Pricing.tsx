@@ -4,6 +4,7 @@ import InviteLink from "../../components/inviteLink/InviteLink"
 import styles from './pricing.module.css'
 import PricingCard from "../../components/pricingCard/PricingCard"
 import { useState } from "react"
+import Comparison from "../../components/comparison/Comparison"
 
 export default function Pricing() {
     const [yearly, setYearly] = useState(false)
@@ -111,10 +112,68 @@ export default function Pricing() {
             </section>
 
             <section
-                className={styles.compare}
+                className={styles.comparison_grid}
             >
 
+                <div>
 
+                    <h4>
+                        THE FEATURES
+                    </h4>
+
+                    <div
+                        className={styles.heading}
+                    >
+
+                        <h4>
+                            BASIC
+                        </h4>
+
+
+                        <h4>
+                            PRO
+                        </h4>
+
+
+                        <h4>
+                            BUSINESS
+                        </h4>
+
+                    </div>
+
+                </div>
+
+                <Comparison
+                    title='UNLIMITED STORY POSTING'
+                />
+
+                <Comparison
+                    title='UNLIMITED PHOTO UPLOAD'
+                />
+
+                <Comparison
+                    title='EMBEDDING CUSTOM CONTENT'
+                />
+
+                <Comparison
+                    title='CUSTOMIZE METADATA'
+                />
+
+                <Comparison
+                    title='ADVANCED METRICS'
+                />
+
+                <Comparison
+                    title='PHOTO DOWNLOADS'
+                />
+
+                <Comparison
+                    title='SEARCH ENGINE INDEXING'
+                />
+
+                <Comparison
+                    title='CUSTOM ANALYTICS'
+                />
 
             </section>
 

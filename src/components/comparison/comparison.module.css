@@ -1,0 +1,21 @@
+.comparison {
+    flex-direction: column;
+}
+
+.comparison h2 {
+    font: var(--font-h4);
+    letter-spacing: var(--space-h4);
+}
+
+.check_grid,
+.title_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.check_grid > h5 {
+    font-family: inherit;
+    font-size: 10px;
+    letter-spacing: 1.67px;
+    opacity: 0.5;
+}

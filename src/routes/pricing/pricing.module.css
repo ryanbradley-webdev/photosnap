@@ -47,3 +47,20 @@
     display: grid;
     row-gap: 24px;
 }
+
+.comparison_grid {
+    padding-inline: 29px;
+}
+
+.comparison_grid > div {
+    display: flex;
+}
+
+.comparison_grid > div:first-child {
+    padding-bottom: 23px;
+    border-bottom: 1px solid var(--clr-black);
+}
+
+.heading {
+    display: none;
+}
