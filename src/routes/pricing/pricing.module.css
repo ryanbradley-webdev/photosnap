@@ -51,6 +51,8 @@
 .comparison_grid {
     padding-inline: 29px;
     margin-block: 16px 64px;
+    margin-inline: auto;
+    max-width: 731px;
 }
 
 .comparison_grid > div {
@@ -63,5 +65,14 @@
 }
 
 .heading {
-    display: none;
+    display: grid;
+    grid-template-columns: repeat(3, 140px);
+    margin-left: auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+    .heading {
+        display: none;
+    }
 }

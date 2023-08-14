@@ -27,3 +27,25 @@
     letter-spacing: 1.67px;
     opacity: 0.5;
 }
+
+@media screen and (min-width: 641px) {
+    .comparison {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .comparison > h2 {
+        flex-grow: 1;
+        margin-bottom: 0;
+    }
+
+    .title_grid {
+        display: none;
+    }
+
+    .check_grid {
+        grid-template-columns: repeat(3, 140px);
+        margin-left: auto;
+        justify-items: center;
+    }
+}
