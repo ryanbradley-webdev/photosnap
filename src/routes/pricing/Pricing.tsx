@@ -1,5 +1,6 @@
 import Hero from "../../components/hero/Hero"
-import PricingHero from '../../assets/mobile-images/pricing.jpg'
+import PricingMobile from '../../assets/mobile-images/pricing.jpg'
+import PricingTablet from '../../assets/tablet-images/pricing.jpg'
 import InviteLink from "../../components/inviteLink/InviteLink"
 import styles from './pricing.module.css'
 import PricingCard from "../../components/pricingCard/PricingCard"
@@ -15,7 +16,12 @@ export default function Pricing() {
             <Hero>
 
                 <img
-                    src={PricingHero}
+                    src={PricingMobile}
+                    alt="Pricing"
+                />
+
+                <img
+                    src={PricingTablet}
                     alt="Pricing"
                 />
 

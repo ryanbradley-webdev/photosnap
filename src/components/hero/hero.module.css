@@ -8,6 +8,10 @@
     height: auto;
 }
 
+.hero > img:not(:first-of-type) {
+    display: none;
+}
+
 .hero div {
     position: relative;
     padding-block: 72px;
@@ -32,4 +36,38 @@
 
 .hero div > button {
     margin-top: 23px;
+}
+
+@media screen and (min-width: 481px) {
+    .hero div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 490px;
+        padding-inline: 54px;
+    }
+
+    .hero div::after {
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        height: 144px;
+        width: 6px;
+    }
+
+    .hero > img:nth-of-type(2) {
+        display: block;
+    }
+
+    .hero > img:not(:nth-of-type(2)) {
+        display: none;
+    }
+
+    .hero > img {
+        float: right;
+        height: 490px;
+        width: 30%;
+        max-width: 301px;
+        object-fit: cover;
+    }
 }
