@@ -1,5 +1,6 @@
 import HeroMobile from '../../assets/mobile-images/create-and-share.jpg'
 import HeroTablet from '../../assets/tablet-images/hero.jpg'
+import HeroDesktop from '../../assets/desktop-images/create-and-share.jpg'
 import BeautifulStoriesMobile from '../../assets/mobile-images/beautiful-stories.jpg'
 import EveryoneMobile from '../../assets/mobile-images/designed-for-everyone.jpg'
 import Button from '../../components/button/Button'
@@ -25,6 +26,11 @@ export default function Home() {
 
                 <img
                     src={HeroTablet}
+                    alt='Create and Share'
+                />
+
+                <img
+                    src={HeroDesktop}
                     alt='Create and Share'
                 />
 
