@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
-import Facebook from '../../assets/Facebook'
-import Instagram from '../../assets/Instagram'
+import Facebook from '../../assets/socials/Facebook'
+import Instagram from '../../assets/socials/Instagram'
 import LogoMain from '../../assets/LogoMain'
-import Pinterest from '../../assets/Pinterest'
-import Twitter from '../../assets/Twitter'
-import YouTube from '../../assets/YouTube'
-import styles from './footer.module.css'
+import Pinterest from '../../assets/socials/Pinterest'
+import Twitter from '../../assets/socials/Twitter'
+import YouTube from '../../assets/socials/YouTube'
 import Button from '../button/Button'
+import styles from './footer.module.css'
 
 export default function Footer() {
     return (

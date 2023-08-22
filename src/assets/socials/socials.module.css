@@ -1,0 +1,16 @@
+.social_link {
+    position: relative;
+    display: flex;
+}
+
+.social_link > svg:last-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: var(--clr-white);
+    transition: opacity 0.15s ease-in-out;
+}
+
+.social_link:is(:hover, :focus) > svg:last-child {
+    opacity: 0;
+}

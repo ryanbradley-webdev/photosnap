@@ -26,8 +26,8 @@
     width: 154px;
 }
 
-.socials > svg path {
-    fill: var(--clr-white);
+.socials > a {
+    display: flex;
 }
 
 .links {
