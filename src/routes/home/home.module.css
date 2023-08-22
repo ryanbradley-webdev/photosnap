@@ -4,6 +4,35 @@
     height: auto;
 }
 
+@media screen and (max-width: 556px) {
+    .stories > img:not(:first-child) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 557px) {
+    .stories {
+        display: flex;
+        align-items: center;
+    }
+
+    .stories:nth-of-type(3) {
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (min-width: 557px) and (max-width: 1000px) {
+    .stories > img:not(:nth-child(2)) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    .stories > img:not(:nth-child(3)) {
+        display: none;
+    }
+}
+
 .stories div {
     position: relative;
     padding-block: 72px;

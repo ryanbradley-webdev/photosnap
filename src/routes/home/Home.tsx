@@ -2,7 +2,11 @@ import HeroMobile from '../../assets/mobile-images/create-and-share.jpg'
 import HeroTablet from '../../assets/tablet-images/hero.jpg'
 import HeroDesktop from '../../assets/desktop-images/create-and-share.jpg'
 import BeautifulStoriesMobile from '../../assets/mobile-images/beautiful-stories.jpg'
+import BeautifulStoriesTablet from '../../assets/tablet-images/beautiful-stories.jpg'
+import BeautifulStoriesDesktop from '../../assets/desktop-images/beautiful-stories.jpg'
 import EveryoneMobile from '../../assets/mobile-images/designed-for-everyone.jpg'
+import EveryoneTablet from '../../assets/tablet-images/designed-for-everyone.jpg'
+import EveryoneDesktop from '../../assets/desktop-images/designed-for-everyone.jpg'
 import Button from '../../components/button/Button'
 import styles from './home.module.css'
 import Card from '../../components/card/Card'
@@ -59,7 +63,18 @@ export default function Home() {
             >
 
                 <img
-                    srcSet={`${BeautifulStoriesMobile}`}
+                    src={`${BeautifulStoriesMobile}`}
+                    alt=''
+                />
+
+                <img
+                    src={`${BeautifulStoriesTablet}`}
+                    alt=''
+                />
+
+                <img
+                    src={`${BeautifulStoriesDesktop}`}
+                    alt=''
                 />
 
                 <div>
@@ -88,6 +103,14 @@ export default function Home() {
 
                 <img
                     srcSet={`${EveryoneMobile}`}
+                />
+
+                <img
+                    srcSet={`${EveryoneTablet}`}
+                />
+
+                <img
+                    srcSet={`${EveryoneDesktop}`}
                 />
 
                 <div>
