@@ -12,6 +12,12 @@
     }
 }
 
+@media screen and (min-width: 975px) {
+    .pricing {
+        row-gap: 24px;
+    }
+}
+
 .price_toggle {
     display: flex;
     align-items: center;
@@ -58,6 +64,14 @@
 .pricing_grid {
     display: grid;
     row-gap: 24px;
+}
+
+@media screen and (min-width: 975px) {
+    .pricing_grid {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        max-width: 1110px;
+    }
 }
 
 .comparison_grid {
