@@ -1,7 +1,7 @@
 #root {
   height: 100%;
-  height: 100vh; /* FIXME for development only */
-  overflow-x: hidden;
+  max-width: 1440px;
+  margin-inline: auto;
 }
 
 a {
