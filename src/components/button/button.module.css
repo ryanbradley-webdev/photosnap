@@ -15,6 +15,14 @@
     height: 48px;
 }
 
+@media screen and (min-width: 481px) {
+    .black_btn,
+    .white_btn {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+}
+
 .black_arrow_btn,
 .white_arrow_btn {
     display: flex;
