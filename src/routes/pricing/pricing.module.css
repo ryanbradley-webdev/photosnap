@@ -75,10 +75,28 @@
 }
 
 .comparison_grid {
+    position: relative;
     padding-inline: 29px;
     margin-block: 16px 64px;
     margin-inline: auto;
     max-width: 731px;
+}
+
+@media screen and (min-width: 557px) {
+    .comparison_grid {
+        margin-top: 48px;
+        padding-top: 112px;
+    }
+
+    .comparison_grid::before {
+        content: 'COMPARE';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font: var(--font-h1);
+        letter-spacing: var(--space-h1);
+    }
 }
 
 .comparison_grid > div {
