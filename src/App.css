@@ -1,7 +1,12 @@
 #root {
   height: 100%;
   max-width: 1440px;
+  overflow-x: hidden;
   margin-inline: auto;
+}
+
+main {
+  margin-top: 72px;
 }
 
 a {

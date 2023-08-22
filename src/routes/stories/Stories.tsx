@@ -1,8 +1,8 @@
 import Featured from "./Featured"
-
 import { SAMPLE_STORIES } from "../../samepleData/sampleStories"
 import Appalachia from '../../assets/sample-stories/appalachia.jpg'
 import Card from "../../components/card/Card"
+import styles from './stories.module.css'
 
 export default function Stories() {
     return (
@@ -12,7 +12,9 @@ export default function Stories() {
                 story={FEATURED_STORY}
             />
 
-            <section>
+            <section
+                className={styles.stories}
+            >
 
                 {SAMPLE_STORIES.map(story => (
                     <Card
