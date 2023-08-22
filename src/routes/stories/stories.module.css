@@ -3,14 +3,47 @@
     flex-direction: column;
 }
 
-.featured_story > div {
-    color: var(--clr-white);
-    background-color: var(--clr-black);
-}
-
 .featured_content {
     padding-inline: 29px;
     padding-block: 48px;
+    color: var(--clr-white);
+}
+
+@media screen and (max-width: 480px) {
+    .featured_content {
+        background-color: var(--clr-black);
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .featured_story {
+        justify-content: center;
+        height: 650px;
+        background-image: url(../../assets/tablet-images/moon-of-appalacia.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .featured_story > img {
+        display: none;
+    }
+
+    .featured_content {
+        padding: 0;
+        margin-left: 39px;
+        max-width: 387px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .featured_story {
+        background-image: url(../../assets/desktop-images/moon-of-appalacia.jpg);
+    }
+
+    .featured_content {
+        margin-left: 112px;
+    }
 }
 
 .featured_content > h1 {
