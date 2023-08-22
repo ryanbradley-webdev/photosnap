@@ -60,3 +60,14 @@
 .white_arrow_btn > svg {
     stroke: var(--clr-white);
 }
+
+.black_btn:is(:hover, :focus),
+.white_btn:is(:hover, :focus) {
+    color: var(--clr-black);
+    background-color: var(--clr-grey);
+}
+
+.white_arrow_btn:is(:hover, :focus),
+.black_arrow_btn:is(:hover, :focus) {
+    text-decoration: underline;
+}

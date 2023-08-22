@@ -53,6 +53,10 @@
     letter-spacing: 2.5px;
 }
 
+.links a:is(:hover, :focus) {
+    opacity: 0.3;
+}
+
 .nav button {
     width: 100%;
 }
